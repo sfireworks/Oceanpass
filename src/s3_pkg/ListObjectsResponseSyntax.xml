@@ -1,0 +1,30 @@
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult>
+   <IsTruncated>boolean</IsTruncated>
+   <Marker>string</Marker>
+   <NextMarker>string</NextMarker>
+   <Contents>
+      <ChecksumAlgorithm>string</ChecksumAlgorithm>
+      ...
+      <ETag>string</ETag>
+      <Key>string</Key>
+      <LastModified>timestamp</LastModified>
+      <Owner>
+         <DisplayName>string</DisplayName>
+         <ID>string</ID>
+      </Owner>
+      <Size>integer</Size>
+      <StorageClass>string</StorageClass>
+   </Contents>
+   ...
+   <Name>string</Name>
+   <Prefix>string</Prefix>
+   <Delimiter>string</Delimiter>
+   <MaxKeys>integer</MaxKeys>
+   <CommonPrefixes>
+      <Prefix>string</Prefix>
+   </CommonPrefixes>
+   ...
+   <EncodingType>string</EncodingType>
+</ListBucketResult>

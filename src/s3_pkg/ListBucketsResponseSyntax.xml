@@ -1,0 +1,15 @@
+Response Syntax
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<ListAllMyBucketsResult>
+   <Buckets>
+      <Bucket>
+         <CreationDate>timestamp</CreationDate>
+         <Name>string</Name>
+      </Bucket>
+   </Buckets>
+   <Owner>
+      <DisplayName>string</DisplayName>
+      <ID>string</ID>
+   </Owner>
+</ListAllMyBucketsResult>

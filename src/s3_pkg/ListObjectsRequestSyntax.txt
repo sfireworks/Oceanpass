@@ -1,0 +1,5 @@
+Request Syntax
+GET /?delimiter=Delimiter&encoding-type=EncodingType&marker=Marker&max-keys=MaxKeys&prefix=Prefix HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+x-amz-request-payer: RequestPayer
+x-amz-expected-bucket-owner: ExpectedBucketOwner

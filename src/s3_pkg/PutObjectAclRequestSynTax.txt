@@ -1,0 +1,31 @@
+PUT /{Key+}?acl&versionId=VersionId HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+x-amz-acl: ACL
+Content-MD5: ContentMD5
+x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
+x-amz-grant-full-control: GrantFullControl
+x-amz-grant-read: GrantRead
+x-amz-grant-read-acp: GrantReadACP
+x-amz-grant-write: GrantWrite
+x-amz-grant-write-acp: GrantWriteACP
+x-amz-request-payer: RequestPayer
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+<?xml version="1.0" encoding="UTF-8"?>
+<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+   <AccessControlList>
+      <Grant>
+         <Grantee>
+            <DisplayName>string</DisplayName>
+            <EmailAddress>string</EmailAddress>
+            <ID>string</ID>
+            <xsi:type>string</xsi:type>
+            <URI>string</URI>
+         </Grantee>
+         <Permission>string</Permission>
+      </Grant>
+   </AccessControlList>
+   <Owner>
+      <DisplayName>string</DisplayName>
+      <ID>string</ID>
+   </Owner>
+</AccessControlPolicy>

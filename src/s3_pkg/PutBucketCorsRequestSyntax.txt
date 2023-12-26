@@ -1,0 +1,21 @@
+PUT /?cors HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+Content-MD5: ContentMD5
+x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+<?xml version="1.0" encoding="UTF-8"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+   <CORSRule>
+      <AllowedHeader>string</AllowedHeader>
+      ...
+      <AllowedMethod>string</AllowedMethod>
+      ...
+      <AllowedOrigin>string</AllowedOrigin>
+      ...
+      <ExposeHeader>string</ExposeHeader>
+      ...
+      <ID>string</ID>
+      <MaxAgeSeconds>integer</MaxAgeSeconds>
+   </CORSRule>
+   ...
+</CORSConfiguration>

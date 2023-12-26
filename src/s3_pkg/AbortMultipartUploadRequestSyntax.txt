@@ -1,0 +1,37 @@
+DELETE /Key+?uploadId=UploadId HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+x-amz-request-payer: RequestPayer
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+
+
+URI Request Parameters
+The request uses the following URI parameters.
+
+Bucket
+The bucket name to which the upload was taking place.
+
+When using this action with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this action with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using access points in the Amazon S3 User Guide.
+
+When you use this action with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When you use this action with S3 on Outposts through the AWS SDKs, you provide the Outposts access point ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see What is S3 on Outposts in the Amazon S3 User Guide.
+
+Required: Yes
+
+Key
+Key of the object for which the multipart upload was initiated.
+
+Length Constraints: Minimum length of 1.
+
+Required: Yes
+
+uploadId
+Upload ID that identifies the multipart upload.
+
+Required: Yes
+
+x-amz-expected-bucket-owner
+The account ID of the expected bucket owner. If the bucket is owned by a different account, the request fails with the HTTP status code 403 Forbidden (access denied).
+
+x-amz-request-payer
+Confirms that the requester knows that they will be charged for the request. Bucket owners need not specify this parameter in their requests. For information about downloading objects from Requester Pays buckets, see Downloading Objects in Requester Pays Buckets in the Amazon S3 User Guide.
+
+Valid Values: requester

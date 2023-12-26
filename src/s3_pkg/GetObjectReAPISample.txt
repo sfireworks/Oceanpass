@@ -1,0 +1,60 @@
+
+
+
+示例请求：获取对象的指定版本
+以下请求返回对象的指定版本。
+
+            GET /myObject?versionId=3/L4kqtJlcpXroDTDmpUMLUo HTTP/1.1
+            Host: bucket.s3.<Region>.amazonaws.com
+            Date: Wed, 28 Oct 2009 22:32:00 GMT
+            Authorization: authorization string
+    
+示例响应：对版本化对象 GET 请求
+此示例说明了 GetObject 的一种用法。
+
+            HTTP/1.1 200 OK
+            x-amz-id-2: eftixk72aD6Ap54OpIszj7UDNEHGran
+            x-amz-request-id: 318BC8BC148832E5
+            Date: Wed, 28 Oct 2009 22:32:00 GMT
+            Last-Modified: Sun, 1 Jan 2006 12:00:00 GMT
+            x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
+            ETag: "fba9dede5f27731c9771645a39863328"
+            Content-Length: 434234
+            Content-Type: text/plain
+            Connection: close
+            Server: AmazonS3
+            [434234 bytes of object data]
+         
+
+
+示例请求：更改响应标头值的参数
+以下请求指定 GET 请求中覆盖响应标头值的所有查询字符串参数。
+
+            GET /Junk3.txt?response-cache-control=No-cache&response-content-disposition=attachment%3B%20filename%3Dtesting.txt&response-content-encoding=x-gzip&response-content-language=mi%2C%20en&response-expires=Thu%2C%2001%20Dec%201994%2016:00:00%20GMT HTTP/1.1
+            x-amz-date: Sun, 19 Dec 2010 01:53:44 GMT
+            Accept: */*
+            Authorization: AWS AKIAIOSFODNN7EXAMPLE:aaStE6nKnw8ihhiIdReoXYlMamW=
+
+示例响应：具有覆盖的响应标头值
+以下请求指定 GET 请求中覆盖响应标头值的所有查询字符串参数。
+
+            HTTP/1.1 200 OK
+            x-amz-id-2: SIidWAK3hK+Il3/Qqiu1ZKEuegzLAAspwsgwnwygb9GgFseeFHL5CII8NXSrfWW2
+            x-amz-request-id: 881B1CBD9DF17WA1
+            Date: Sun, 19 Dec 2010 01:54:01 GMT
+            x-amz-meta-param1: value 1
+            x-amz-meta-param2: value 2
+            Cache-Control: No-cache
+            Content-Language: mi, en
+            Expires: Thu, 01 Dec 1994 16:00:00 GMT
+            Content-Disposition: attachment; filename=testing.txt
+            Content-Encoding: x-gzip
+            Last-Modified: Fri, 17 Dec 2010 18:10:41 GMT
+            ETag: "0332bee1a7bf845f176c5c0d1ae7cf07"
+            Accept-Ranges: bytes
+            Content-Type: text/plain
+            Content-Length: 22
+            Server: AmazonS3
+
+            [object data not shown]
+            
