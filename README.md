@@ -69,8 +69,13 @@ docker run -d oceanpass:latest
 - Support more cloud object storage providers  
 
 ## Contact Us
-  * Issue: [this link](https://github.com/rhinouser0/oceanpass/issues)
-  * Email: rhino_fs@163.com
+  * Issue: [this link](https://github.com/sfireworks/oceanpass/issues)
+  * Email: sfireworks@qq.com
+
+## Contributor
+  * [sfireworks](https://github.com/sfireworks)
+  * [Eric](https://github.com/rhinouser0)
+
 
 ## License
 - [Apache 2.0](LICENSE)
