@@ -1,0 +1,50 @@
+Response Syntax
+HTTP/1.1 200
+x-amz-request-charged: RequestCharged
+<?xml version="1.0" encoding="UTF-8"?>
+<AccessControlPolicy>
+   <Owner>
+      <DisplayName>string</DisplayName>
+      <ID>string</ID>
+   </Owner>
+   <AccessControlList>
+      <Grant>
+         <Grantee>
+            <DisplayName>string</DisplayName>
+            <EmailAddress>string</EmailAddress>
+            <ID>string</ID>
+            <xsi:type>string</xsi:type>
+            <URI>string</URI>
+         </Grantee>
+         <Permission>string</Permission>
+      </Grant>
+   </AccessControlList>
+</AccessControlPolicy>
+
+
+Response Elements
+If the action is successful, the service sends back an HTTP 200 response.
+
+The response returns the following HTTP headers.
+
+x-amz-request-charged
+If present, indicates that the requester was successfully charged for the request.
+
+Valid Values: requester
+
+The following data is returned in XML format by the service.
+
+AccessControlPolicy
+Root level tag for the AccessControlPolicy parameters.
+
+Required: Yes
+
+Grants
+A list of grants.
+
+Type: Array of Grant data types
+
+Owner
+Container for the bucket owner's display name and ID.
+
+Type: Owner data type

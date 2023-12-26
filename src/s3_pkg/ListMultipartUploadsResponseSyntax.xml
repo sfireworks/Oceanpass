@@ -1,0 +1,35 @@
+Response Syntax
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<ListMultipartUploadsResult>
+   <Bucket>string</Bucket>
+   <KeyMarker>string</KeyMarker>
+   <UploadIdMarker>string</UploadIdMarker>
+   <NextKeyMarker>string</NextKeyMarker>
+   <Prefix>string</Prefix>
+   <Delimiter>string</Delimiter>
+   <NextUploadIdMarker>string</NextUploadIdMarker>
+   <MaxUploads>integer</MaxUploads>
+   <IsTruncated>boolean</IsTruncated>
+   <Upload>
+      <ChecksumAlgorithm>string</ChecksumAlgorithm>
+      <Initiated>timestamp</Initiated>
+      <Initiator>
+         <DisplayName>string</DisplayName>
+         <ID>string</ID>
+      </Initiator>
+      <Key>string</Key>
+      <Owner>
+         <DisplayName>string</DisplayName>
+         <ID>string</ID>
+      </Owner>
+      <StorageClass>string</StorageClass>
+      <UploadId>string</UploadId>
+   </Upload>
+   ...
+   <CommonPrefixes>
+      <Prefix>string</Prefix>
+   </CommonPrefixes>
+   ...
+   <EncodingType>string</EncodingType>
+</ListMultipartUploadsResult>

@@ -1,0 +1,36 @@
+Response Syntax
+HTTP/1.1 200
+x-amz-abort-date: AbortDate
+x-amz-abort-rule-id: AbortRuleId
+x-amz-request-charged: RequestCharged
+<?xml version="1.0" encoding="UTF-8"?>
+<ListPartsResult>
+   <Bucket>string</Bucket>
+   <Key>string</Key>
+   <UploadId>string</UploadId>
+   <PartNumberMarker>integer</PartNumberMarker>
+   <NextPartNumberMarker>integer</NextPartNumberMarker>
+   <MaxParts>integer</MaxParts>
+   <IsTruncated>boolean</IsTruncated>
+   <Part>
+      <ChecksumCRC32>string</ChecksumCRC32>
+      <ChecksumCRC32C>string</ChecksumCRC32C>
+      <ChecksumSHA1>string</ChecksumSHA1>
+      <ChecksumSHA256>string</ChecksumSHA256>
+      <ETag>string</ETag>
+      <LastModified>timestamp</LastModified>
+      <PartNumber>integer</PartNumber>
+      <Size>integer</Size>
+   </Part>
+   ...
+   <Initiator>
+      <DisplayName>string</DisplayName>
+      <ID>string</ID>
+   </Initiator>
+   <Owner>
+      <DisplayName>string</DisplayName>
+      <ID>string</ID>
+   </Owner>
+   <StorageClass>string</StorageClass>
+   <ChecksumAlgorithm>string</ChecksumAlgorithm>
+</ListPartsResult>

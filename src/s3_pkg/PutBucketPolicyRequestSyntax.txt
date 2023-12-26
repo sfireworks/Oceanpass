@@ -1,0 +1,8 @@
+PUT /?policy HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+Content-MD5: ContentMD5
+x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
+x-amz-confirm-remove-self-bucket-access: ConfirmRemoveSelfBucketAccess
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+
+{ Policy in JSON format }

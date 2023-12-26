@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<server_config>
+    <address_config config_name="address_config">
+        <ip_addr>0.0.0.0</ip_addr>
+        <http_port>9999</http_port>
+    </address_config>
+    <endpoint_config config_name="endpoint_config">
+        <!-- cloud_provider_for_endpoint: set <endpoint.config_name>, -->
+        <!--            such as: oss_cn-shanghai-internal  -->
+        <cloud_provider_for_endpoint>oss_cn-shanghai-internal</cloud_provider_for_endpoint>
+        <endpoint config_name="oss_cn-shanghai-internal">
+            <endpoint_url>https://oss-cn-shanghai-internal.aliyuncs.com</endpoint_url>
+        </endpoint>
+        <endpoint config_name="cos_ap-shanghai">
+            <endpoint_url>https://cos.ap-shanghai.myqcloud.com</endpoint_url>
+        </endpoint>
+        <endpoint config_name="obs_cn-east-1">
+            <endpoint_url>https://obs.cn-east-1.myhuaweicloud.com</endpoint_url>
+        </endpoint>
+        <endpoint config_name="obs_cn-east-2">
+            <endpoint_url>https://obs.cn-east-2.myhuaweicloud.com</endpoint_url>
+        </endpoint>
+        <endpoint config_name="obs_cn-east-3">
+            <endpoint_url>https://obs.cn-east-3.myhuaweicloud.com</endpoint_url>
+        </endpoint>
+        <!-- other cloud storage -->
+    </endpoint_config>
+        <!--xml or db-->
+    <server_mode>xml</server_mode>
+    <service_name>s3</service_name>
+    <signature_all_disabled>0</signature_all_disabled>
+    <signature_oss_req_abled>0</signature_oss_req_abled>
+    <sts_duration_seconds>3600</sts_duration_seconds>
+</server_config>

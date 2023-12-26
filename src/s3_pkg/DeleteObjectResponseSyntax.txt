@@ -1,0 +1,4 @@
+HTTP/1.1 204
+x-amz-delete-marker: DeleteMarker
+x-amz-version-id: VersionId
+x-amz-request-charged: RequestCharged

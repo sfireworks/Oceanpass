@@ -1,0 +1,24 @@
+PUT /?logging HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+Content-MD5: ContentMD5
+x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+<?xml version="1.0" encoding="UTF-8"?>
+<BucketLoggingStatus xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+   <LoggingEnabled>
+      <TargetBucket>string</TargetBucket>
+      <TargetGrants>
+         <Grant>
+            <Grantee>
+               <DisplayName>string</DisplayName>
+               <EmailAddress>string</EmailAddress>
+               <ID>string</ID>
+               <xsi:type>string</xsi:type>
+               <URI>string</URI>
+            </Grantee>
+            <Permission>string</Permission>
+         </Grant>
+      </TargetGrants>
+      <TargetPrefix>string</TargetPrefix>
+   </LoggingEnabled>
+</BucketLoggingStatus>

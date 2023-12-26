@@ -1,0 +1,17 @@
+HTTP/1.1 200
+x-amz-abort-date: AbortDate
+x-amz-abort-rule-id: AbortRuleId
+x-amz-server-side-encryption: ServerSideEncryption
+x-amz-server-side-encryption-customer-algorithm: SSECustomerAlgorithm
+x-amz-server-side-encryption-customer-key-MD5: SSECustomerKeyMD5
+x-amz-server-side-encryption-aws-kms-key-id: SSEKMSKeyId
+x-amz-server-side-encryption-context: SSEKMSEncryptionContext
+x-amz-server-side-encryption-bucket-key-enabled: BucketKeyEnabled
+x-amz-request-charged: RequestCharged
+x-amz-checksum-algorithm: ChecksumAlgorithm
+<?xml version="1.0" encoding="UTF-8"?>
+<InitiateMultipartUploadResult>
+   <Bucket>string</Bucket>
+   <Key>string</Key>
+   <UploadId>string</UploadId>
+</InitiateMultipartUploadResult>

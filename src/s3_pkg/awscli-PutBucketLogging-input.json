@@ -1,0 +1,20 @@
+{
+    "LoggingEnabled": { 
+        "TargetBucket": "oceanpass003-1316748551",
+        "TargetGrants": [
+            {
+                "Grantee": {
+                    "Type": "Group"
+                }, 
+                "Permission": "READ"
+            },
+            {
+                "Grantee": {
+                    "Type": "Group111"
+                },
+                "Permission": "READ"
+            }
+        ], 
+        "TargetPrefix": "MyBucketLogs/"
+    }
+}

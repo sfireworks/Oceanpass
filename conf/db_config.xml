@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<db_config>
+    <db_base>
+        <db_type>mysql</db_type>
+        <username>xxxxxx</username>
+        <password>xxxxxxxx</password>
+        <ip_protocol>tcp</ip_protocol>
+        <ip_address>xxxxxxxxxxxxxx</ip_address>
+        <port>3306</port>
+        <db_name>dirservice</db_name>
+        <table_name>oss_auth_xxxx</table_name>
+    </db_base>
+</db_config>
