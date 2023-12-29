@@ -8,7 +8,7 @@ A multi-cloud object storage intergration framework. With simple configurations,
 # Usage Guide
 Clone the repo to your local enviroment with 
 ```bash
-git clone xxx/oceanpass
+git clone git@github.com:sfireworks/Oceanpass.git
 cd oceanpss
 ```
 ## How to configure
@@ -53,7 +53,41 @@ docker run -d oceanpass:latest
 ```
 
 ## Performance test
+Since we add a intergration layer ontop of object storage systems, oceanpass increases the access latency within 5%.
 
+## Compatibility
+
+| api list | awscli | oss java sdk |
+| :-----| :----: | :----: |
+| ListObjects | &#10004; | &#10004; |
+| list_objects_v2 | &#10004; | &#10004; |
+| head_object | &#10004; | &#10004; |
+| get_object | &#10004; | &#10004; |
+| put_object | &#10004; | &#10004; |
+| copy_object | &#10004; | &#10004; |
+| delete_object | &#10004; | &#10004; |
+| delete_objects | &#10004; | &#10004; |
+| create_multipart_upload | &#10004; | &#10004; |
+| complete_multipart_upload | &#10004; | &#10004; |
+| list_multipart_uploads | &#10004; | &#10004; |
+| abort_multipart_upload | &#10004; | &#10004; |
+| list_parts | &#10004; | &#10004; |
+| upload_part | &#10004; | &#10004; |
+| upload_part_copy | &#10004; | &#10004; |
+| list_buckets | &#10004; | &#10004; |
+| get_bucket_location | &#10004; | &#10004; |
+| create_bucket | &#10004; | &#10004; |
+| head_bucket | &#10004; | &#10004; |
+| delete_bucket | &#10004; | &#10004; |
+| get_bucket_acl | &#10004; | &#10004; |
+| get_bucket_cors | &#10004; | &#10004; |
+| put_bucket_cors | &#10004; | &#10004; |
+| delete_bucket_cors | &#10004; | &#10004; |
+| get_bucket_policy | &#10004; | &#10004; |
+| put_bucket_policy | &#10004; | &#10004; |
+| get_bucket_policy_status | &#10004; | &#10004; |
+| get_bucket_logging | &#10004; | &#10004; |
+| put_bucket_logging | &#10004; | &#10004; |
 
 ## Design
 [Detailed design document](docs/oceanpass-design.zh.md)
